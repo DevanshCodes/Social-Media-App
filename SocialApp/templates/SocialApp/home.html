@@ -1,0 +1,11 @@
+<head>
+    {% if user.is_authenticated %}
+        Hey {{user.username}}
+        You are successfully logged in.
+        <a href="{%url 'logout' %}"><button>Logout</button></a>
+    {% else %}
+        Sorry, you're not logged in
+        Please login
+        <a href="{%url 'login'%}" ><button>Login</button> </a>
+    {%endif%}
+</head>

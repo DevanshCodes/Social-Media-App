@@ -1,0 +1,13 @@
+<HTML>
+    <head>
+        Hello Welcome to my Social Media App!
+    </head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            Username <input type="text" name="username" placeholder="Username" id="username">
+            Password <input type="password" name="password" placeholder="Password" id="password">
+            <input type='submit' value="submit">
+        </form>
+    </body>
+</HTML>
